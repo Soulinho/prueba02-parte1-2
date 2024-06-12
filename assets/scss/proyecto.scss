@@ -1,0 +1,55 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+// Framework
+@import "../bootstrap-5.3.3/scss/bootstrap.scss";
+
+// Estilos
+
+
+body {
+    background-color: wheat;
+}
+
+
+
+.boton1 {
+    width: 10vh;
+    height: 40px;
+    margin: 30px;
+}
+
+
+.caja1 {
+    background-color: white;
+    width: 70vh;
+    height: 60vh;
+    align-content: center;
+    text-align: center;
+}
+
+
+.caja2 {
+    background-color: #99FFFF;
+    width: 70vh;
+    height: 60vh;
+    align-content: center;
+    text-align: center;
+}
+
+.caja3 {
+    background-color: #98FF98;
+    width: 70vh;
+    height: 60vh;
+    align-content: center;
+    text-align: center;
+}
+
+
+.caja4 {
+    background-color: pink;
+    width: 70vh;
+    height: 60vh;
+    align-content: center;
+    text-align: center;
+}

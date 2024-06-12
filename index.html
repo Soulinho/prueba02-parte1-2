@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap</title>
+    <link rel="stylesheet" href="assets/scss/proyecto.css"> 
+</head>
+<body>
+    
+        
+
+  <div class="container-fluid my-5">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-5">
+                <label for="inputTitulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="inputTitulo">
+            </div>
+            <div class="col-5">
+                <label for="inputDescripcion" class="form-label">Descripción</label>  
+                <input type="text" class="form-control" id="inputDescripcion">
+            </div>
+            <div class="col-1 d-flex justify-content-end boton1">
+                <button class="btn btn-primary" id="cambiarBtn">Cambiar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="container-fluid my-5">
+      <div class="row">
+        
+              
+              <div class="col-md-2 mx-auto my-5 caja1">
+                  
+                  <div id="liveAlertPlaceholder"></div>
+                  <button id="liveAlertBtn" class="btn btn-info" data-texto="Gracias por presionarme, ahora scrollea la rueda de tu mouse hacia arriba o hacia abajo">Alerta</button>
+                  
+
+              </div>
+
+              <div class="col-md-2 mx-auto my-5 caja2">
+                <button id="btnpop" type="button" class="btn btn-danger text-center" data-mostrarpop="popover" data-titulopop="Esto es un PopOver" data-contenidopop="Gracias por clickearme, revisa la consola ahora.">Popover</button>
+            </div>
+
+
+
+
+
+        
+      </div>          
+    </div>
+
+
+     <div class="container-fluid mt-5">
+      <div class="row">
+        
+        <div class="col-md-2 mx-auto my-5 caja3">
+                  
+            <button type="button" class="btn btn-warning" id="liveToastBtn">Toast</button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="assets/img/soul.jpg" class="rounded me-2" alt="">
+                  <strong class="me-auto">Bienvenido</strong>
+                  <small>Hace 11 minutos</small>
+                  <button type="button" class="btn-close" data-cerrartoast="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  <p id="copyTexto" oncopy="noCopies()"> Hola, como estas? no copies este texto, si no te insultare. </p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-2 mx-auto my-5 caja4">
+          <button id="canvitas" class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Offcanvas</button>
+        
+          
+          <div  class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasBottomLabel">Bienvenidos!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small" data-texto-canvas="Esto es un Offcanvas, bienvenido/a, espero verte pronto, presiona X cerrarlo, pero antes te invito a presionar cualquier letra:">
+              <input type="text" id="cajita" onkeydown="presionaLetra()">
+              <p id="presionasteTecla"></p>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+        
+      </div>          
+    </div>
+
+    
+
+
+
+
+    
+    <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
